@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d60e10f0-1c74-452f-a7f3-a7ef75539499" name="Changes" comment="Adding localstack docker-compose.yml">
-      <change afterPath="$PROJECT_DIR$/.idea/terraform.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localstack/deploy/lambda-deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localstack/deploy/update-lambda.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localstack/terraform/main.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d60e10f0-1c74-452f-a7f3-a7ef75539499" name="Changes" comment="Examples README, terraform files and deployment scripts (pontentially)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +33,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TF_FMT": "false",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.terraform"
@@ -89,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667600735658</updated>
-      <workItem from="1667600738629" duration="11657000" />
+      <workItem from="1667600738629" duration="12768000" />
     </task>
     <task id="LOCAL-00001" summary="Adding localstack docker-compose.yml">
       <created>1667608907912</created>
@@ -98,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667608907912</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Examples README, terraform files and deployment scripts (pontentially)">
+      <created>1667668090957</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667668090957</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding localstack docker-compose.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding localstack docker-compose.yml" />
+    <MESSAGE value="Examples README, terraform files and deployment scripts (pontentially)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Examples README, terraform files and deployment scripts (pontentially)" />
   </component>
 </project>
