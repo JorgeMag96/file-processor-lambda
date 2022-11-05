@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d60e10f0-1c74-452f-a7f3-a7ef75539499" name="Changes" comment="Examples README, terraform files and deployment scripts (pontentially)">
+    <list default="true" id="d60e10f0-1c74-452f-a7f3-a7ef75539499" name="Changes" comment="Adding dependencies">
+      <change afterPath="$PROJECT_DIR$/docs/images/s3-lambda-s3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LambdaHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/LambdaHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +37,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TF_FMT": "false",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jorge/GitHub/file-processor-lambda/docs/images",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.terraform"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/localstack" />
     </key>
@@ -85,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667600735658</updated>
-      <workItem from="1667600738629" duration="12768000" />
+      <workItem from="1667600738629" duration="16120000" />
     </task>
     <task id="LOCAL-00001" summary="Adding localstack docker-compose.yml">
       <created>1667608907912</created>
@@ -101,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667668090957</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding dependencies">
+      <created>1667669160651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667669160651</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding localstack docker-compose.yml" />
     <MESSAGE value="Examples README, terraform files and deployment scripts (pontentially)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Examples README, terraform files and deployment scripts (pontentially)" />
+    <MESSAGE value="Adding dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding dependencies" />
   </component>
 </project>
