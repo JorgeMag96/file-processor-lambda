@@ -33,7 +33,7 @@ We are going to use it with Docker to run the application locally.
 > - [awscli-local](https://github.com/localstack/awscli-local) A wrapper around the AWS CLI that allows you to use the AWS CLI to interact with LocalStack.
 > - [LocalStack Cockpit](https://localstack.cloud/products/cockpit/) A web-based UI for LocalStack that allows you to manage your local AWS environment.
 
-# Setup
+# Setup for local development
 
 1. Initialize LocalStack with docker-compose
 
