@@ -1,7 +1,8 @@
 # AWS Lambda function in Java with S3 events integration
 
-
-![Architecture](docs/images/s3-lambda-s3.png)
+<p align="center">
+  <img alt="Architecture" src="docs/images/s3-lambda-s3.png" />
+</p>
 
 ---
 

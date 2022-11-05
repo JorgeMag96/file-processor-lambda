@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d60e10f0-1c74-452f-a7f3-a7ef75539499" name="Changes" comment="Adding dependencies">
-      <change afterPath="$PROJECT_DIR$/docs/images/s3-lambda-s3.png" afterDir="false" />
+    <list default="true" id="d60e10f0-1c74-452f-a7f3-a7ef75539499" name="Changes" comment="Update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LambdaHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/LambdaHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667600735658</updated>
-      <workItem from="1667600738629" duration="16120000" />
+      <workItem from="1667600738629" duration="16248000" />
     </task>
     <task id="LOCAL-00001" summary="Adding localstack docker-compose.yml">
       <created>1667608907912</created>
@@ -114,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667669160651</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update README.md">
+      <created>1667672414126</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667672414126</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +140,7 @@
     <MESSAGE value="Adding localstack docker-compose.yml" />
     <MESSAGE value="Examples README, terraform files and deployment scripts (pontentially)" />
     <MESSAGE value="Adding dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding dependencies" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
 </project>
