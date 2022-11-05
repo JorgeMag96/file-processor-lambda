@@ -20,12 +20,12 @@ Use the following instructions to deploy the sample application.
 
 >
 > - [Java 11 runtime environment (SE JRE)](https://www.oracle.com/java/technologies/javase-downloads.html)
-> - [Gradle 5](https://gradle.org/releases/)
+> - [Gradle 7.4](https://gradle.org/releases/) (alternatively you can use the gradle wrapper included)
 > - The Bash shell. For Linux and macOS, this is included by default. In Windows 10, you can install the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to get a Windows-integrated version of Ubuntu and Bash.
 > - [The AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) v1.17 or newer.
 > - [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) to run the application locally with LocalStack.
 > - [Terraform](https://www.terraform.io/downloads) (codifies cloud APIs into declarative configuration files.)
-
+ 
 [LocalStack](https://localstack.cloud/) Is a fully functional local cloud stack to develop and test your cloud and serverless apps offline.
 We are going to use it with Docker to run the application locally.
 
@@ -35,11 +35,34 @@ We are going to use it with Docker to run the application locally.
 
 # Setup
 
-* This is a list item
-* This is another list item
+1. Initialize LocalStack with docker-compose
 
-1. This is a numbered list item
-2. This is another numbered list item
+```bash
+cd localstack && docker-compose up
+```
+
+2. Package the lambda to a zip file
+
+```bash
+cd.. && ./gradlew packageBig
+```
+
+3. Build the infrastructure with Terraform
+
+```bash
+cd localstack/terraform && terraform init && terraform apply
+```
+
+4. Finally upload a file to the input bucket
+
+```bash
+aws s3 cp <path_to_a_file> s3://input-bucket --endpoint-url=http://localhost:4566
+```
+with awslocal
+
+```bash
+awslocal s3 cp <path_to_a_file> s3://input-bucket
+```
 
 # Notes
 
