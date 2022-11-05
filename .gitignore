@@ -40,4 +40,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Localstack & Terraform ###
+/localstack/terraform/.terraform/
+/localstack/terraform/terraform*
+/localstack/terraform/.terraform*
 /localstack/volume/
