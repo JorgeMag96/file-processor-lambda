@@ -44,7 +44,7 @@ cd localstack && docker-compose up
 2. Package the lambda to a zip file
 
 ```bash
-cd.. && ./gradlew packageBig
+./gradlew packageBig
 ```
 
 3. Build the infrastructure with Terraform
