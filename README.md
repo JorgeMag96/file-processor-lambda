@@ -18,7 +18,6 @@ Use the following instructions to deploy the sample application.
 
 # Requirements
 
----
 >
 > - [Java 11 runtime environment (SE JRE)](https://www.oracle.com/java/technologies/javase-downloads.html)
 > - [Gradle 5](https://gradle.org/releases/)
@@ -36,8 +35,6 @@ We are going to use it with Docker to run the application locally.
 
 # Setup
 
----
-
 * This is a list item
 * This is another list item
 
@@ -45,7 +42,5 @@ We are going to use it with Docker to run the application locally.
 2. This is another numbered list item
 
 # Notes
-
----
 
 * **IAM security enforcement** is not supported by LocalStack Community edition. Make sure to properly set up and test these configurations while deploying the application to AWS.
