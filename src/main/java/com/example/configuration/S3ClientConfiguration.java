@@ -11,8 +11,9 @@ public class S3ClientConfiguration {
     public static S3Client localS3Client(){
         try {
             return S3Client.builder()
-                    // TODO: Make the IP able to be resolved to avoid hardcoding
-                    .endpointOverride(new URI("http://172.18.0.2:4566")) // Should match your localstack container IP
+                    .endpointOverride(new URI(
+                            String.format("%s%s%s",
+                                    "http://", System.getenv("LOCALSTACK_HOSTNAME"), ":4566")))
                     .region(Region.of("us-west-2")).build();
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);

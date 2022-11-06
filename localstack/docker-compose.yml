@@ -5,15 +5,15 @@ services:
     container_name: "${LOCALSTACK_DOCKER_NAME-localstack_main}"
     image: localstack/localstack
     ports:
-      - "127.0.0.1:4566:4566"            # LocalStack Gateway
-      - "127.0.0.1:4510-4559:4510-4559"  # external services port range
+      - "127.0.0.1:4566:4566"             # LocalStack Gateway
+      - "127.0.0.1:4510-4559:4510-4559"   # external services port range
     environment:
       - DEBUG=${DEBUG-}
       - PERSISTENCE=${PERSISTENCE-}
       - LAMBDA_EXECUTOR=${LAMBDA_EXECUTOR-}
       - LAMBDA_REMOTE_DOCKER=false
       - DOCKER_HOST=unix:///var/run/docker.sock
-      - ENFORCE_IAM=0
+      - ENFORCE_IAM=1                     # Enable IAM policy evaluation and enforcement. If this is disabled (the default), IAM policies will have no effect to your requests.
     volumes:
       - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"

@@ -63,7 +63,3 @@ with awslocal
 ```bash
 awslocal s3 cp <path_to_a_file> s3://input-bucket
 ```
-
-# Notes
-
-* **IAM security enforcement** is not supported by LocalStack Community edition. Make sure to properly set up and test these configurations while deploying the application to AWS.

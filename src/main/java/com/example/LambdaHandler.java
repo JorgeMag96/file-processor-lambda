@@ -55,10 +55,9 @@ public class LambdaHandler implements RequestHandler<S3Event, String> {
 
         } catch (IOException e) {
             throw new RuntimeException(e);
-        } finally {
-            LOGGER.info(String.format("Finished processing file: %s", objectKey));
         }
 
+        LOGGER.info(String.format("Finished processing file: %s", objectKey));
         return "ok";
     }
 
