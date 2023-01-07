@@ -1,8 +1,6 @@
 # AWS Lambda function in Java with S3 events integration
 
-<p align="center">
-  <img alt="Architecture" src="docs/images/s3-lambda-s3.png" />
-</p>
+![Architecture](docs/images/s3-lambda-s3.png)
 
 ---
 
@@ -59,7 +57,31 @@ cd localstack/terraform && terraform init && terraform apply
 aws s3 cp <path_to_a_file> s3://input-bucket --endpoint-url=http://localhost:4566
 ```
 with awslocal
-
 ```bash
 awslocal s3 cp <path_to_a_file> s3://input-bucket
 ```
+
+# Localstack IntelliJ - JVM Remote debugging
+
+1. Create intelliJ Run/Debug configuration to wait for remote debugger server available on port 5050:
+
+![Wait Remote Debugger Server](docs/images/wait-remote-debugger-server.png)
+
+Script text:
+
+```bash
+while [[ -z $(docker ps | grep :5050) ]]; do sleep 1; done
+```
+
+2. Create intelliJ Run/Debug configuration for JVM Remote debugging and use the script from above as a Before launch target:
+
+![Remote Debug JVM](docs/images/remote-debug-jvm.png)
+
+Command line arguments:
+
+```bash
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5050
+```
+
+
+
